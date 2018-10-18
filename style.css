@@ -1,0 +1,17 @@
+div {
+  border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+ 
+  
+}
+
+.foodList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw;
+  padding: 1vw; 
+ 
+
+}
