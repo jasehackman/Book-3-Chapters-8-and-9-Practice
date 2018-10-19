@@ -33,7 +33,7 @@ function nomCou(noms){
 function nomCal(noms){
   let insert = "";
   if (noms.product.nutriments.hasOwnProperty("energy_value")) {
-      insert += ` ${noms.product.nutriments.energy_value}`
+      insert += ` ${noms.product.nutriments.energy_value}${noms.product.nutriments.energy_unit}`
   } else {
     insert = `Nope`
   }
@@ -42,7 +42,7 @@ function nomCal(noms){
 function nomFat(noms){
   let insert = "";
   if (noms.product.nutriments.hasOwnProperty("fat")) {
-      insert += ` ${noms.product.nutriments.fat}`
+      insert += ` ${noms.product.nutriments.fat}${noms.product.nutriments.fat_unit}`
   } else {
     insert = `Nope`
   }
@@ -51,7 +51,7 @@ function nomFat(noms){
 function nomSug(noms){
   let insert = "";
   if (noms.product.nutriments.hasOwnProperty("sugars_value")) {
-      insert += ` ${noms.product.nutriments.sugars_value}`
+      insert += ` ${noms.product.nutriments.sugars_value}${noms.product.nutriments.sugars_unit}`
   } else {
     insert = `Nope`
   }
